@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="./styles.css" rel="stylesheet" />
+        <script defer src="./scripts/menu.js"></script>
+        <script defer src="./scripts/products.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&family=Parisienne&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="">
+        <div class="container">
+            <header id="header">
+                <div class="logo-wrapper">
+                    <img
+                        class="logo"
+                        src="./assets/coffee-bean.png"
+                        alt="Logo"
+                    />
+                    <h4 class="name">CoffeBean</h4>
+                </div>
+                <nav id="menu" class="navigation">
+                    <a class="link" href="#">Homepage</a>
+                    <a class="link" href="#">Blog</a>
+                    <a class="link" href="#">Products</a>
+                    <a class="link .fav-cart" href="#">
+                        <i class="fa-solid fa-heart"></i>Favorites
+                        <span id="favorite-counter">0</span>
+                    </a>
+                    <a class="link cart" href="#">
+                        <i class="fa-solid fa-shopping-basket"></i>Cart
+                        <span id="cart-counter">0</span>
+                    </a>
+                    <a class="link button" href="#">
+                        <i class="fa-solid fa-user-plus"></i>Register</a
+                    >
+                    <a class="link button" href="#">
+                        <i class="fa-solid fa-right-to-bracket"></i>Login</a
+                    >
+                </nav>
+                <div id="toggle-mobile-menu" class="mobile-menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+            <section id="hero">
+                <img class="hero-image" src="./assets/images/banner.jpg" />
+                <div class="overlay">
+                    <div class="description-wrapper">
+                        <h1 class="title">
+                            CoffeeBean <br />
+                            Coffee for everyone
+                        </h1>
+                        <p class="description">
+                            Coffee is a beverage prepared from roasted coffee
+                            beans. Darkly colored, bitter, and slightly acidic,
+                            coffee has a stimulating effect on humans, primarily
+                            due to its caffeine content.
+                        </p>
+                        <a class="cta-button" href="#">Explore Now</a>
+                    </div>
+                </div>
+            </section>
+            <section id="products-list">
+                <!-- <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-1.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee 1 0.25l</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div> -->
+                <!-- <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-2.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee 2 0.25l</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div>
+            <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-3.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee 3 0.25l</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div>
+            <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-4.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee 4 0.25l</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div>
+            <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-5.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee 5 0.25l</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div>
+            <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-6.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee 6 0.25l</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div>
+            <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-pack-1.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee Pack 1 2x0.5kg</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div>
+            <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-pack-2.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee Pack 2 0.5kg</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div>
+            <div class="product-card">
+                <img
+                    class="product-image"
+                    src="./assets/images/coffee-pack-3.png"
+                    alt="frappe"
+                />
+                <h3 class="product-name">CoffeBean - Coffee Pack 3 3x0.5kg</h3>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vero quod, quos consectetur fugiat sint officiis?
+                </p>
+            </div> -->
+            </section>
+
+             <section id="cart">
+            <div class="shopping-cart">
+                <h2>Cart</h2>
+                <ul class="list-cart"></ul>
+                <div class="checkOut">
+                    <div class="total">0</div>
+                    <div class="closeShopping">Close</div>
+                </div>
+            </div>
+        </section> 
+            <div class="shopping-cart">
+                <h2>Cart</h2>
+                <ul class="list-cart">
+                    <div class="item"> 
+
+                 <div class="item">
+                        <img
+                            class="image"
+                            src="./assets/images/coffee-1.png"
+                            alt="frappe"
+                        />
+                        <h3 class="name">CoffeBean - Coffee 1 0.25l</h3>
+                        <p class="totalPrice">4.99$</p>
+                        <div class="quantity">
+                            <span class="minus"><</span>
+                            <span>1</span>
+                            <span class="plus">></span>
+                        </div>
+                    </div> 
+                <!-- <div class="item">
+                        <img
+                            class="image"
+                            src="./assets/images/coffee-1.png"
+                            alt="frappe"
+                        />
+                        <h3 class="name">CoffeBean - Coffee 1 0.25l</h3>
+                        <p class="totalPrice">4.99$</p>
+                        <div class="quantity">
+                            <span class="minus"><</span>
+                            <span>1</span>
+                            <span class="plus">></span>
+                        </div>
+                    </div>  -->
+                 </ul>
+                <div class="btn">
+                    <button class="close">CLOSE</button>
+                    <button class="checkOut">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
